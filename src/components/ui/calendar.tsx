@@ -2,7 +2,7 @@
 
 import type * as React from "react";
 import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight, CalendarIcon } from "lucide-react";
+import { CalendarIcon } from "lucide-react";
 import { DayPicker } from "react-day-picker";
 import { ptBR } from "date-fns/locale";
 import { format } from "date-fns";
@@ -13,6 +13,7 @@ import { Card } from "@/components/ui/card";
 
 export type CalendarProps = React.ComponentProps<typeof DayPicker> & {
   showHeader?: boolean;
+  selected?: Date;
 };
 
 function Calendar({
@@ -92,14 +93,6 @@ function Calendar({
             "aria-selected:bg-primary aria-selected:text-primary-foreground rounded-full",
           day_hidden: "invisible",
           ...classNames,
-        }}
-        components={{
-          IconLeft: ({ ...props }) => (
-            <ChevronLeft className="h-4 w-4" {...props} />
-          ),
-          IconRight: ({ ...props }) => (
-            <ChevronRight className="h-4 w-4" {...props} />
-          ),
         }}
         locale={ptBR}
         {...props}
