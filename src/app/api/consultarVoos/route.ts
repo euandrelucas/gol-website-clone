@@ -9,12 +9,25 @@ export async function POST(req: NextRequest) {
   const { origem, destino, ida, volta } = await req.json();
   const url = `https://b2c.voegol.com.br/compra/busca-parceiros?pv=br&tipo=DF&de=${origem}&para=${destino}&ida=${ida}&volta=${volta}&ADT=1&ADL=0&CHD=0&INF=0&voebiz=0`;
 
-  const browser = await puppeteer.launch({ headless: false });
+  const browser =
+    process.env.NODE_ENV === "production"
+      ? await puppeteer.launch({
+          headless: true,
+          defaultViewport: null,
+          executablePath: "/usr/bin/google-chrome",
+          args: ["--no-sandbox"],
+        })
+      : await puppeteer.launch();
   const page = await browser.newPage();
 
   await page.goto(url, { waitUntil: "networkidle2" });
 
-  await page.waitForSelector(".p-select-flight__accordion", { timeout: 30000 });
+  await page
+    .waitForSelector(".p-select-flight__accordion", { timeout: 15000 })
+    .catch((e) => {
+      console.error("Timeout", e);
+      return null;
+    });
 
   const html = await page.content();
   writeFileSync("page.html", html);
