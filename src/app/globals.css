@@ -1,24 +1,44 @@
-@import "tailwindcss";
-
-@theme {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Estilos para o DatePicker */
+.react-datepicker-wrapper {
+  width: 100%;
 }
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.react-datepicker {
+  font-family: Arial, sans-serif;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.react-datepicker__header {
+  background-color: #f7fafc;
+  border-bottom: 1px solid #e2e8f0;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  padding-top: 8px;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.react-datepicker__current-month {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day {
+  width: 1.9rem;
+  line-height: 1.9rem;
+  margin: 0.166rem;
+}
+
+.react-datepicker__day--selected {
+  background-color: #ff7020;
+  color: white;
+}
+
+.react-datepicker__day--keyboard-selected {
+  background-color: #ff7020;
+  color: white;
+}
+
+.react-datepicker__day:hover {
+  background-color: #ffa366;
 }

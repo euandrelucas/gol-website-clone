@@ -1,0 +1,98 @@
+.react-datepicker {
+  font-family: Arial, sans-serif;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.react-datepicker__header {
+  background-color: #ff7020;
+  border-bottom: none;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  padding-top: 0.8rem;
+}
+
+.react-datepicker__current-month {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.react-datepicker__day-name {
+  color: #ffffff;
+}
+
+.react-datepicker__day,
+.react-datepicker__time-name {
+  color: #4a5568;
+}
+
+.react-datepicker__day:hover {
+  background-color: #ffa366;
+  border-radius: 50%;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background-color: #ff7020;
+  color: #ffffff;
+  border-radius: 50%;
+}
+
+.react-datepicker__day--selected:hover,
+.react-datepicker__day--keyboard-selected:hover {
+  background-color: #e56218;
+}
+
+.react-datepicker__day--disabled {
+  color: #cbd5e0;
+}
+
+.react-datepicker__navigation {
+  top: 1rem;
+  line-height: 1.7rem;
+  border: 0.45rem solid transparent;
+}
+
+.react-datepicker__navigation--previous {
+  border-right-color: #ffffff;
+  left: 1rem;
+}
+
+.react-datepicker__navigation--next {
+  border-left-color: #ffffff;
+  right: 1rem;
+}
+
+.react-datepicker__navigation:hover {
+  opacity: 0.8;
+}
+
+.react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow {
+  border-top-color: #ffffff;
+}
+
+.react-datepicker__year-read-view:hover
+  .react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view:hover
+  .react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view:hover
+  .react-datepicker__month-year-read-view--down-arrow {
+  border-top-color: #e2e8f0;
+}
+
+.react-datepicker-popper[data-placement^="bottom"]
+  .react-datepicker__triangle::before,
+.react-datepicker-popper[data-placement^="bottom"]
+  .react-datepicker__triangle::after {
+  border-bottom-color: #ff7020;
+}
+
+.react-datepicker__day--today {
+  font-weight: bold;
+  color: #ff7020;
+}
