@@ -40,7 +40,7 @@ export default function FlightSearchForm() {
   return (
     <form
       onSubmit={handleSearch}
-      className="p-6 rounded-lg shadow-lg max-w-4xl mx-auto"
+      className="p-6 rounded-lg max-w-4xl mx-auto"
     >
       <div className="mb-6">
         <RadioGroup
@@ -113,7 +113,7 @@ export default function FlightSearchForm() {
             <DatePicker
               id="departureDate"
               selected={departureDate}
-              onChange={(date: Date) => setDepartureDate(date)}
+              onChange={(date: Date | null) => setDepartureDate(date)}
               dateFormat="dd/MM/yyyy"
               locale={ptBR}
               placeholderText="Selecione uma data"
@@ -135,12 +135,12 @@ export default function FlightSearchForm() {
               <DatePicker
                 id="returnDate"
                 selected={returnDate}
-                onChange={(date: Date) => setReturnDate(date)}
+                onChange={(date: Date | null) => setReturnDate(date)}
                 dateFormat="dd/MM/yyyy"
                 locale={ptBR}
                 placeholderText="Selecione uma data"
                 className="w-full pl-10 pr-3 py-2 border rounded-md text-gray-800"
-                minDate={departureDate}
+                minDate={departureDate || undefined}
               />
               <CalendarIcon
                 className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"

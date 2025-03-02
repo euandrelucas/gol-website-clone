@@ -33,32 +33,32 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <DestinationCard
-              image="/placeholder.svg?height=300&width=400"
+              image="/destinos/riodejaneiro.jpg?height=300&width=400"
               title="Rio de Janeiro"
               price="299"
             />
             <DestinationCard
-              image="/placeholder.svg?height=300&width=400"
+              image="/destinos/saopaulo.jpg?height=300&width=400"
               title="São Paulo"
               price="249"
             />
             <DestinationCard
-              image="/placeholder.svg?height=300&width=400"
+              image="/destinos/fortaleza.jpg?height=300&width=400"
               title="Fortaleza"
               price="399"
             />
             <DestinationCard
-              image="/placeholder.svg?height=300&width=400"
+              image="/destinos/salvador.jpg?height=300&width=400"
               title="Salvador"
               price="349"
             />
             <DestinationCard
-              image="/placeholder.svg?height=300&width=400"
+              image="/destinos/recife.jpg?height=300&width=400"
               title="Recife"
               price="379"
             />
             <DestinationCard
-              image="/placeholder.svg?height=300&width=400"
+              image="/destinos/brasilia.jpg?height=300&width=400"
               title="Brasília"
               price="289"
             />
