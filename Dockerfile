@@ -29,7 +29,7 @@ COPY . .
 RUN yarn lint && yarn build
 
 # Exponha a porta usada pelo aplicativo
-EXPOSE 2458
+EXPOSE 4001
 
 # Comando para iniciar o servidor em produção
 CMD ["yarn", "start"]
