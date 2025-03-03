@@ -9,7 +9,7 @@ import Footer from "@/components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "GOL Linhas Aéreas - Fan-made Recreation",
+  title: "GOL Linhas Aéreas - Website Clone",
   description:
     "Uma recriação não oficial do site da GOL Linhas Aéreas para fins de portfólio",
 };
