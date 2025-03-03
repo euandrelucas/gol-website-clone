@@ -108,7 +108,7 @@ export default function Home() {
                 e muito mais.
               </p>
               <div className="flex flex-wrap gap-4">
-                <button className="bg-black text-white px-6 py-3 rounded-lg flex items-center gap-2">
+                <button className="bg-black hover:cursor-pointer text-white px-6 py-3 rounded-lg flex items-center gap-2">
                   <span>App Store</span>
                 </button>
                 <button className="bg-black text-white px-6 py-3 rounded-lg flex items-center gap-2">

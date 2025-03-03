@@ -15,7 +15,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-[#FF7020]">
+                <Link href="/nossa-frota" className="hover:text-[#FF7020]">
                   Frota
                 </Link>
               </li>
@@ -30,7 +30,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-[#FF7020]">
+                <Link href="https://ri.voegol.com.br/" className="hover:text-[#FF7020]">
                   Relação com Investidores
                 </Link>
               </li>
@@ -51,7 +51,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-[#FF7020]">
+                <Link href="https://b2c.voegol.com.br/check-in/" className="hover:text-[#FF7020]">
                   Check-in
                 </Link>
               </li>
@@ -127,16 +127,16 @@ export default function Footer() {
             <div className="mt-6">
               <h3 className="text-lg font-bold mb-4">Redes Sociais</h3>
               <div className="flex space-x-4">
-                <Link href="#" className="hover:text-[#FF7020]">
+                <Link href="https://www.facebook.com/voegol/" className="hover:text-[#FF7020]">
                   <Facebook size={20} />
                 </Link>
-                <Link href="#" className="hover:text-[#FF7020]">
+                <Link href="https://www.twitter.com/voegoloficial" className="hover:text-[#FF7020]">
                   <Twitter size={20} />
                 </Link>
-                <Link href="#" className="hover:text-[#FF7020]">
+                <Link href="https://www.instagram.com/voegoloficial/" className="hover:text-[#FF7020]">
                   <Instagram size={20} />
                 </Link>
-                <Link href="#" className="hover:text-[#FF7020]">
+                <Link href="https://www.youtube.com/user/gol" className="hover:text-[#FF7020]">
                   <Youtube size={20} />
                 </Link>
               </div>
