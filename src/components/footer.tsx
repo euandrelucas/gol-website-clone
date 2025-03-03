@@ -25,7 +25,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-[#FF7020]">
+                <Link href="/trabalhe-conosco" className="hover:text-[#FF7020]">
                   Trabalhe Conosco
                 </Link>
               </li>
