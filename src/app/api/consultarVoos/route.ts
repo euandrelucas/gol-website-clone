@@ -30,7 +30,6 @@ export async function POST(req: NextRequest) {
     });
 
   const html = await page.content();
-  writeFileSync("page.html", html);
 
   const $ = cheerio.load(html);
   const voos: unknown[] = [];
