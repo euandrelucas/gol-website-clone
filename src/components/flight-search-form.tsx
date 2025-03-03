@@ -33,6 +33,7 @@ export default function FlightSearchForm({
   initialOriginLabel = "",
   initialDestinationLabel = "",
   onSearch,
+  isAModifySearch = false,
 }: FlightSearchFormProps) {
   const router = useRouter();
   const [tripType, setTripType] = useState("roundtrip");

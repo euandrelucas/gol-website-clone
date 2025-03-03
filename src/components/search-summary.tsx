@@ -17,6 +17,7 @@ interface SearchSummaryProps {
   volta?: string;
   origemLabel: string;
   destinoLabel: string;
+  setLoading?: (loading: boolean) => void;
 }
 
 export function SearchSummary({
@@ -26,6 +27,7 @@ export function SearchSummary({
   volta,
   origemLabel,
   destinoLabel,
+  setLoading,
 }: SearchSummaryProps) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -53,16 +55,19 @@ export function SearchSummary({
               Modificar busca
             </Button>
           </DialogTrigger>
-          <DialogContent className="sm:max-w-[600px]">
+          <DialogContent className="sm:max-w-[600px] bg-white">
             <DialogHeader>
-              <DialogTitle>Modificar busca</DialogTitle>
+              <DialogTitle className="text-black font-medium">Modificar busca</DialogTitle>
             </DialogHeader>
             <FlightSearchForm
               initialOrigin={origem}
               initialDestination={destino}
               initialOriginLabel={origemLabel}
               initialDestinationLabel={destinoLabel}
-              onSearch={() => setIsOpen(false)}
+              onSearch={() => {
+                setIsOpen(false);
+                setLoading?.(true);
+              }}
             />
           </DialogContent>
         </Dialog>

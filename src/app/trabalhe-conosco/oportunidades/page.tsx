@@ -8,7 +8,7 @@ import dynamic from "next/dynamic";
 import { Spinner } from "@/components/ui/spinner";
 
 const DynamicJobOpportunities = dynamic(
-  () => import("@/components/JobOpportunities"),
+  () => import("@/components/job-opportunities"),
   {
     loading: () => (
       <div className="flex justify-center items-center h-64">

@@ -78,6 +78,7 @@ export default function ResultadosPage() {
         volta={searchParams.get("volta") || ""}
         origemLabel={searchParams.get("origemLabel") || ""}
         destinoLabel={searchParams.get("destinoLabel") || ""}
+        setLoading={setLoading}
       />
       {error ? (
         <div

@@ -10,59 +10,58 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-4">Sobre a GOL</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="hover:text-[#FF7020]">
+                <Link href="/nossa-historia" className="hover:text-[#FF7020]">
                   Nossa História
                 </Link>
               </li>
               <li>
                 <Link href="/nossa-frota" className="hover:text-[#FF7020]">
-                  Frota
+                  Nossa Frota
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-[#FF7020]">
-                  Destinos
+                <Link
+                  href="https://www.voegol.com.br/sobre-a-gol/anuncie-na-gol"
+                  className="hover:text-[#FF7020]"
+                >
+                  Anuncie na GOL
                 </Link>
               </li>
               <li>
                 <Link href="/trabalhe-conosco" className="hover:text-[#FF7020]">
-                  Trabalhe Conosco
+                  Carreiras
                 </Link>
               </li>
               <li>
-                <Link href="https://ri.voegol.com.br/" className="hover:text-[#FF7020]">
-                  Relação com Investidores
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-bold mb-4">Informações</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="#" className="hover:text-[#FF7020]">
-                  Horários de Voos
+                <Link
+                  href="https://www.voegol.com.br/sobre-a-gol/compliance"
+                  className="hover:text-[#FF7020]"
+                >
+                  Compliance
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-[#FF7020]">
-                  Bagagem
+                <Link
+                  href="https://ri.voegol.com.br/?_gl=1*19c3258*_gcl_au*MjEyMTQzNDk5NC4xNzQwNTI2NTM1"
+                  className="hover:text-[#FF7020]"
+                >
+                  Investidores
                 </Link>
               </li>
               <li>
-                <Link href="https://b2c.voegol.com.br/check-in/" className="hover:text-[#FF7020]">
-                  Check-in
+                <Link
+                  href="https://www.voegol.com.br/sobre-a-gol/imprensa"
+                  className="hover:text-[#FF7020]"
+                >
+                  Imprensa
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-[#FF7020]">
-                  Documentação
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-[#FF7020]">
-                  Direitos do Passageiro
+                <Link
+                  href="https://www.voegol.com.br/sobre-a-gol/sustentabilidade"
+                  className="hover:text-[#FF7020]"
+                >
+                  Sustentabilidade
                 </Link>
               </li>
             </ul>
@@ -72,54 +71,89 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-4">Serviços</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="hover:text-[#FF7020]">
-                  GOL Premium
+                <Link
+                  href="https://www.voegol.com.br/agencias"
+                  className="hover:text-[#FF7020]"
+                >
+                  Agências
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-[#FF7020]">
-                  Programa Smiles
+                <Link
+                  href="/informacoes/formas-pagamento"
+                  className="hover:text-[#FF7020]"
+                >
+                  Formas de Pagamento
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-[#FF7020]">
-                  Cartão de Crédito GOL
+                <Link
+                  href="https://www.voegol.com.br/servicos-gol/revista-gol"
+                  className="hover:text-[#FF7020]"
+                >
+                  Revista GOL
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-[#FF7020]">
-                  Serviços Especiais
+                <Link
+                  href="https://www.voegol.com.br/empresas"
+                  className="hover:text-[#FF7020]"
+                >
+                  Empresas
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-[#FF7020]">
-                  GOL+ Conforto
+                <Link
+                  href="https://www.voegol.com.br/fretamento-e-eventos"
+                  className="hover:text-[#FF7020]"
+                >
+                  Fretamento e Eventos
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.voegol.com.br/atendimento/lojas-e-quiosques-gol"
+                  className="hover:text-[#FF7020]"
+                >
+                  Lojas e Quiosques GOL
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.voegol.com.br/sobre-a-gol/fornecedores"
+                  className="hover:text-[#FF7020]"
+                >
+                  Fornecedores
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-lg font-bold mb-4">Atendimento</h3>
+            <h3 className="text-lg font-bold mb-4">Suporte</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="hover:text-[#FF7020]">
-                  Central de Vendas
+                <Link
+                  href="https://www.voegol.com.br/atendimento/contatos-atendimento-online"
+                  className="hover:text-[#FF7020]"
+                >
+                  Telefones
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-[#FF7020]">
-                  Fale Conosco
+                <Link
+                  href="https://www.voegol.com.br/informacoes-legais"
+                  className="hover:text-[#FF7020]"
+                >
+                  Informações Legais
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-[#FF7020]">
-                  Perguntas Frequentes
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-[#FF7020]">
-                  Reembolso
+                <Link
+                  href="https://www.voegol.com.br/premios-gol"
+                  className="hover:text-[#FF7020]"
+                >
+                  Prêmios
                 </Link>
               </li>
             </ul>
@@ -127,19 +161,48 @@ export default function Footer() {
             <div className="mt-6">
               <h3 className="text-lg font-bold mb-4">Redes Sociais</h3>
               <div className="flex space-x-4">
-                <Link href="https://www.facebook.com/voegol/" className="hover:text-[#FF7020]">
+                <Link
+                  href="https://www.facebook.com/voegol/"
+                  className="hover:text-[#FF7020]"
+                >
                   <Facebook size={20} />
                 </Link>
-                <Link href="https://www.twitter.com/voegoloficial" className="hover:text-[#FF7020]">
+                <Link
+                  href="https://www.twitter.com/voegoloficial"
+                  className="hover:text-[#FF7020]"
+                >
                   <Twitter size={20} />
                 </Link>
-                <Link href="https://www.instagram.com/voegoloficial/" className="hover:text-[#FF7020]">
+                <Link
+                  href="https://www.instagram.com/voegoloficial/"
+                  className="hover:text-[#FF7020]"
+                >
                   <Instagram size={20} />
                 </Link>
-                <Link href="https://www.youtube.com/user/gol" className="hover:text-[#FF7020]">
+                <Link
+                  href="https://www.youtube.com/user/gol"
+                  className="hover:text-[#FF7020]"
+                >
                   <Youtube size={20} />
                 </Link>
               </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="bg-[#FF7020]/10 p-4 rounded-lg border border-[#FF7020]/20">
+              <h3 className="text-lg font-bold mb-2 text-[#FF7020]">
+                Aviso Importante
+              </h3>
+              <p className="text-sm">
+                Este é um site NÃO OFICIAL da GOL Linhas Aéreas, criado
+                exclusivamente para fins de estudo e demonstração de habilidades
+                de desenvolvimento web.
+              </p>
+              <p className="text-sm mt-2">
+                Não possui nenhuma afiliação com a GOL Linhas Aéreas S.A. e não
+                deve ser utilizado para compras reais de passagens ou serviços.
+              </p>
             </div>
           </div>
         </div>
@@ -147,8 +210,8 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-gray-400">
-              © {new Date().getFullYear()} GOL Linhas Aéreas. Todos os direitos
-              reservados.
+              © {new Date().getFullYear()} Projeto Educacional - Não afiliado à
+              GOL Linhas Aéreas
             </p>
             <div className="flex space-x-4 mt-4 md:mt-0">
               <Link
@@ -161,19 +224,13 @@ export default function Footer() {
                 href="#"
                 className="text-sm text-gray-400 hover:text-[#FF7020]"
               >
-                Termos de Uso
-              </Link>
-              <Link
-                href="#"
-                className="text-sm text-gray-400 hover:text-[#FF7020]"
-              >
-                Cookies
+                Personalizar Cookies
               </Link>
             </div>
           </div>
-          <p className="text-xs text-gray-500 mt-4 text-center md:text-left">
-            Este é um site não oficial, criado apenas para fins de demonstração
-            de portfólio.
+          <p className="text-xs text-gray-500 mt-4 text-center md:text-left font-bold">
+            ESTE SITE FOI CRIADO APENAS PARA FINS DE ESTUDO E NÃO REPRESENTA O
+            SITE OFICIAL DA GOL LINHAS AÉREAS
           </p>
         </div>
       </div>

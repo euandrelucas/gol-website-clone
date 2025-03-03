@@ -8,7 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import dynamic from "next/dynamic";
 import { Spinner } from "@/components/ui/spinner";
 
-const DynamicJobListings = dynamic(() => import("@/components/JobListings"), {
+const DynamicJobListings = dynamic(() => import("@/components/job-listings"), {
   loading: () => (
     <div className="flex justify-center items-center h-64">
       <Spinner size="lg" />

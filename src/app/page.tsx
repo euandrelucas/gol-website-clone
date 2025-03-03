@@ -120,7 +120,7 @@ export default function Home() {
               <div className="w-64 h-96 bg-gray-800 rounded-3xl relative overflow-hidden">
                 <div className="absolute inset-2 bg-gray-100 rounded-2xl">
                   <Image
-                    src="/placeholder.svg?height=600&width=300"
+                    src="/aplicativo_gol.webp?height=600&width=300"
                     alt="GOL App"
                     width={300}
                     height={600}
