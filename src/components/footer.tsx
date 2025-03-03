@@ -210,12 +210,12 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-gray-400">
-              © {new Date().getFullYear()} Projeto Educacional - Não afiliado à
+              © {new Date().getFullYear()} <Link href="https://andrepaiva.dev" className="hover:text-[#FF7020]">André Paiva</Link> - Não afiliado à
               GOL Linhas Aéreas
             </p>
             <div className="flex space-x-4 mt-4 md:mt-0">
               <Link
-                href="#"
+                href="https://www.voegol.com.br/informacoes-legais/politica-de-privacidade-e-protecao-de-dados"
                 className="text-sm text-gray-400 hover:text-[#FF7020]"
               >
                 Política de Privacidade
