@@ -8,7 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { MapPin, Users } from "lucide-react";
 
 async function getCarreiras() {
-  const res = await fetch("http://localhost:3000/api/carreiras", {
+  const res = await fetch("/api/carreiras", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
