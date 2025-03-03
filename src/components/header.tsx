@@ -18,26 +18,25 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <NavItem href="/voos" label="Voos" />
-            <NavItem href="/check-in" label="Check-in" />
-            <NavItem href="/status-voo" label="Status de Voo" />
-            <NavItem href="/servicos" label="Serviços" hasDropdown />
-            <NavItem href="/smiles" label="Smiles" />
+            <NavItem href="/informacoes/check-in" label="Check-in" />
+            <NavItem
+              href="https://b2c.voegol.com.br/status-de-voo/"
+              label="Status de Voo"
+            />
+            <NavItem href="/informacoes" label="Informações" />
+            <NavItem
+              href="https://www.voegol.com.br/informacoes/programa-de-fidelidade-smiles"
+              label="Smiles"
+            />
           </nav>
 
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center space-x-4">
             <Link
-              href="/login"
-              className="text-gray-700 hover:text-[#FF7020] font-medium"
-            >
-              Entrar
-            </Link>
-            <Link
-              href="/comprar"
+              href="https://b2c.voegol.com.br/minhas-viagens/login"
               className="bg-[#FF7020] text-white px-4 py-2 rounded-md font-medium hover:bg-[#E56218] transition-colors"
             >
-              Comprar
+              Entrar
             </Link>
           </div>
 

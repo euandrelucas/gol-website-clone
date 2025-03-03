@@ -77,21 +77,25 @@ export default function Home() {
               icon="luggage"
               title="Bagagem"
               description="Informações sobre bagagem despachada e de mão"
+              link="/informacoes/bagagem"
             />
             <ServiceCard
               icon="check-in"
               title="Check-in"
               description="Faça seu check-in online de forma rápida e fácil"
+              link="/informacoes/check-in"
             />
             <ServiceCard
               icon="seat"
               title="Escolha de Assentos"
               description="Escolha seu assento preferido com antecedência"
+              link="/informacoes/escolha-assentos"
             />
             <ServiceCard
               icon="miles"
               title="Programa Smiles"
               description="Acumule milhas e troque por passagens"
+              link="https://www.voegol.com.br/informacoes/programa-de-fidelidade-smiles"
             />
           </div>
         </div>
