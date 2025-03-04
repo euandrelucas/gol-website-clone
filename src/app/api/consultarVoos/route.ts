@@ -1,7 +1,6 @@
 import * as cheerio from "cheerio";
 import puppeteer from "puppeteer";
 import { NextRequest, NextResponse } from "next/server";
-import { writeFileSync } from "fs";
 
 // URL BASE:     "https://b2c.voegol.com.br/compra/busca-parceiros?pv=br&tipo=DF&de=NAT&para=RIO&ida=09-07-2025&volta=16-07-2025&ADT=1&ADL=0&CHD=0&INF=0&voebiz=0";
 

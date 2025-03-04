@@ -1,29 +1,39 @@
 FROM node:20
 
+# Define um usuário e grupo não-root
+RUN groupadd -g 1001 noyevel && \
+    useradd -m -u 1001 -g noyevel noyevel
+
 # Define o diretório de trabalho
 WORKDIR /usr/src/app
 
-# We don't need the standalone Chromium
-ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
+# Evita o download do Chromium pelo Puppeteer
+ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 
-# Install Google Chrome Stable and fonts
-# Note: this installs the necessary libs to make the browser work with Puppeteer.
-RUN apt-get update && apt-get install curl gnupg -y \
-  && curl --location --silent https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
-  && sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list' \
-  && apt-get update \
-  && apt-get install google-chrome-stable -y --no-install-recommends \
-  && rm -rf /var/lib/apt/lists/*
+# Instala Google Chrome Stable e fontes
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl gnupg && \
+    curl --location --silent https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - && \
+    echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google.list && \
+    apt-get update && \
+    apt-get install -y --no-install-recommends google-chrome-stable && \
+    rm -rf /var/lib/apt/lists/*
 
 # Copia apenas os arquivos necessários para instalar as dependências
 COPY package*.json ./
 COPY yarn.lock ./
 
+# Altera a permissão do diretório de trabalho
+RUN chown -R noyevel:noyevel /usr/src/app
+
+# Muda para o usuário não-root
+USER noyevel
+
 # Instala dependências
-RUN yarn install
+RUN yarn install --frozen-lockfile
 
 # Copia o restante dos arquivos
-COPY . .
+COPY --chown=noyevel:noyevel . .
 
 # Executa verificações e build
 RUN yarn lint && yarn build
