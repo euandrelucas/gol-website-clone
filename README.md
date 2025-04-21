@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">✈️ gol.andrepaiva.dev</h1>
 
-## Getting Started
+<p align="center">
+  Uma recriação fiel da interface da GOL Linhas Aéreas, feita com Next.js, Tailwind CSS e foco em performance e responsividade.
+</p>
 
-First, run the development server:
+<p align="center">
+  <a href="https://gol.andrepaiva.dev"><img src="https://img.shields.io/badge/preview-online-orange?style=for-the-badge&logo=vercel"></a>
+  <a href="https://nextjs.org"><img src="https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js"></a>
+  <a href="https://tailwindcss.com"><img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"></a>
+  <a href="https://typescriptlang.org"><img src="https://img.shields.io/badge/TypeScript-blue?style=for-the-badge&logo=typescript"></a>
+</p>
 
+---
+
+## ✨ Sobre o Projeto
+
+Este projeto é uma **recriação visual** da interface do site oficial da **GOL Linhas Aéreas**, desenvolvido com **Next.js 14**, **Tailwind CSS** e **TypeScript**.
+
+Foi criado com o objetivo de estudar arquitetura de aplicações modernas, técnicas de layout responsivo e performance no App Router do Next.js.
+
+> 🔍 O projeto não tem vínculo com a GOL Linhas Aéreas S.A. — é uma reprodução educacional.
+
+---
+
+## 🚀 Tecnologias
+
+- ✅ **Next.js** (App Router)
+- ✅ **TypeScript**
+- ✅ **Tailwind CSS**
+- ✅ **Shadcn/UI** para componentes acessíveis
+- ✅ **Geist Font** otimizada com `next/font`
+- ✅ Deploy automático via **Vercel**
+
+---
+
+## 📦 Rodando localmente
+
+### 1. Clone o repositório
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/euandrelucas/gol-clone.git
+cd gol-clone
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Instale as dependências
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Rode o servidor de desenvolvimento
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🖼️ Preview
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Confira a versão online do projeto:  
+🔗 [https://gol.andrepaiva.dev](https://gol.andrepaiva.dev)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📁 Estrutura
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+📁 app/             # Páginas e rotas
+📁 components/      # Componentes reutilizáveis
+📁 public/          # Imagens e assets
+📁 styles/          # Estilos globais (Tailwind)
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🎯 Objetivo
+
+- Estudar design e layout responsivo de sites reais
+- Praticar construção de UIs complexas com Next.js
+- Aprimorar habilidades com Tailwind e componentização
+
+---
+
+## 🧑‍💻 Autor
+
+Desenvolvido por [André Lucas](https://github.com/euandrelucas) com fins educacionais.
+
+---
+
+## 🪪 Licença
+
+Este projeto é apenas para fins de estudo.  
+Não possui licença comercial nem uso oficial da marca GOL.
